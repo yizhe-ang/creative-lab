@@ -1,3 +1,3 @@
 # Creative Lab
 
-Creative Coding experiments in WebGL.
+Creative Coding Experiments in WebGL.
