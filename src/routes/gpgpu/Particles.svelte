@@ -8,6 +8,7 @@
 	import CustomShaderMaterial from 'three-custom-shader-material/vanilla';
 	import { InstancedBufferAttribute, MeshMatcapMaterial, Vector3 } from 'three';
 	import { patchShaders } from 'gl-noise/build/glNoise.m';
+	import { base } from '$app/paths';
 
 	const { pointer } = interactivity();
 	const { renderer } = useThrelte();
@@ -17,7 +18,7 @@
 	const SIZE = 256;
 
 	// Load particle texture
-	const map = useTexture('/matcaps/matcap4.png');
+	const map = useTexture(`${base}/matcaps/matcap4.png`);
 
 	const gpuCompute = new GPUComputationRenderer(SIZE, SIZE, renderer);
 
